@@ -1,0 +1,56 @@
+PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - IQKeyboardManager (5.0.6)
+  - RSOSData (0.8.0-beta1):
+    - RSOSData/Authorization (= 0.8.0-beta1)
+    - RSOSData/DataClient (= 0.8.0-beta1)
+    - RSOSData/Serialization (= 0.8.0-beta1)
+    - RSOSData/Util (= 0.8.0-beta1)
+  - RSOSData/Authorization (0.8.0-beta1):
+    - AFNetworking
+    - RSOSData/Util
+  - RSOSData/DataClient (0.8.0-beta1):
+    - AFNetworking
+    - RSOSData/Authorization
+    - RSOSData/Serialization
+  - RSOSData/Serialization (0.8.0-beta1):
+    - RSOSData/Util
+  - RSOSData/Util (0.8.0-beta1)
+  - SVProgressHUD (2.2.2)
+  - UIView+Shake (1.4.0)
+
+DEPENDENCIES:
+  - AFNetworking
+  - IQKeyboardManager
+  - RSOSData (from `.`)
+  - SVProgressHUD
+  - UIView+Shake
+
+EXTERNAL SOURCES:
+  RSOSData:
+    :path: "."
+
+SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  IQKeyboardManager: 077b7f691dfa9d69db9cff66f2bed68ebfc02d9b
+  RSOSData: c8a0026bd9ca28eb07bd2b7d031a17f09dfb4bd6
+  SVProgressHUD: 59b2d3dabacbd051576d21d32293ca7228dc18b0
+  UIView+Shake: 055ad67721de1f74d29c0a1d464697e505dfc62f
+
+PODFILE CHECKSUM: 75352a595f3842862f5b12a5d57b2bad567d9699
+
+COCOAPODS: 1.2.1

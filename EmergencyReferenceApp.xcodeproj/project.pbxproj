@@ -1,0 +1,887 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		83159D131FCE9AB8000E76AC /* ContactListItemTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83159D121FCE9AB8000E76AC /* ContactListItemTVC.xib */; };
+		83159D161FCE9AC6000E76AC /* RSOSContactListItemTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 83159D151FCE9AC6000E76AC /* RSOSContactListItemTVC.m */; };
+		83159D191FCE9D02000E76AC /* RSOSContactListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 83159D181FCE9D02000E76AC /* RSOSContactListVC.m */; };
+		83159D1C1FCEA0BB000E76AC /* RSOSDeviceListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 83159D1B1FCEA0BB000E76AC /* RSOSDeviceListVC.m */; };
+		83159D1F1FCEA0CF000E76AC /* DeviceListItemTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83159D1E1FCEA0CF000E76AC /* DeviceListItemTVC.xib */; };
+		83159D251FCEA130000E76AC /* RSOSDeviceListItemTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 83159D241FCEA130000E76AC /* RSOSDeviceListItemTVC.m */; };
+		83159D281FCEC3ED000E76AC /* RSOSContactDetailsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 83159D271FCEC3ED000E76AC /* RSOSContactDetailsVC.m */; };
+		83159D2B1FCED48A000E76AC /* RSOSSettingsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 83159D2A1FCED48A000E76AC /* RSOSSettingsVC.m */; };
+		8315D6351FCEF20D004C197A /* RSOSProfileDetailsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8315D6341FCEF20D004C197A /* RSOSProfileDetailsVC.m */; };
+		8315D63A1FCF47B5004C197A /* RSOSCallFlowAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8315D6391FCF47B5004C197A /* RSOSCallFlowAPIManager.m */; };
+		831A79C71FD11A1600100C80 /* ListPopover.xib in Resources */ = {isa = PBXBuildFile; fileRef = 831A79C61FD11A1600100C80 /* ListPopover.xib */; };
+		831A79CA1FD11A5800100C80 /* RSOSListPopoverVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 831A79C91FD11A5800100C80 /* RSOSListPopoverVC.m */; };
+		831A79CC1FD11A7500100C80 /* ListPopoverItemTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 831A79CB1FD11A7500100C80 /* ListPopoverItemTVC.xib */; };
+		831A79CF1FD11A9600100C80 /* RSOSListPopoverItemTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 831A79CE1FD11A9600100C80 /* RSOSListPopoverItemTVC.m */; };
+		831A79D71FD12CE800100C80 /* CalendarWeekItemTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 831A79D61FD12CE800100C80 /* CalendarWeekItemTVC.xib */; };
+		831A79DA1FD12D3C00100C80 /* RSOSCalendarWeekItemTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 831A79D91FD12D3C00100C80 /* RSOSCalendarWeekItemTVC.m */; };
+		831A79DD1FD146BB00100C80 /* CalendarDialog.xib in Resources */ = {isa = PBXBuildFile; fileRef = 831A79DC1FD146BB00100C80 /* CalendarDialog.xib */; };
+		831A79E01FD146CE00100C80 /* RSOSCalendarDialogVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 831A79DF1FD146CE00100C80 /* RSOSCalendarDialogVC.m */; };
+		832F8D6B1FCE0D7D00462A81 /* RSOSLoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 832F8D6A1FCE0D7D00462A81 /* RSOSLoginVC.m */; };
+		832F8D6E1FCE0D8800462A81 /* RSOSSignupVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 832F8D6D1FCE0D8800462A81 /* RSOSSignupVC.m */; };
+		832F8D711FCE0D9C00462A81 /* RSOSForgotPasswordVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 832F8D701FCE0D9C00462A81 /* RSOSForgotPasswordVC.m */; };
+		832F8D771FCE0FFF00462A81 /* RSOSGlobalController.m in Sources */ = {isa = PBXBuildFile; fileRef = 832F8D761FCE0FFF00462A81 /* RSOSGlobalController.m */; };
+		832F8D7A1FCE103800462A81 /* UIColor+RSOS.m in Sources */ = {isa = PBXBuildFile; fileRef = 832F8D791FCE103800462A81 /* UIColor+RSOS.m */; };
+		83366A371FE66464007DC7C9 /* RSOSAnimatedTransitioning.m in Sources */ = {isa = PBXBuildFile; fileRef = 83366A361FE66464007DC7C9 /* RSOSAnimatedTransitioning.m */; };
+		83366A3A1FE66479007DC7C9 /* RSOSFadeTransitionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 83366A391FE66479007DC7C9 /* RSOSFadeTransitionDelegate.m */; };
+		833D1BDB1FCDD07700BB78F2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 833D1BDA1FCDD07700BB78F2 /* AppDelegate.m */; };
+		833D1BE11FCDD07700BB78F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 833D1BDF1FCDD07700BB78F2 /* Main.storyboard */; };
+		833D1BE31FCDD07700BB78F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 833D1BE21FCDD07700BB78F2 /* Assets.xcassets */; };
+		833D1BE61FCDD07700BB78F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 833D1BE41FCDD07700BB78F2 /* LaunchScreen.storyboard */; };
+		833D1BE91FCDD07700BB78F2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 833D1BE81FCDD07700BB78F2 /* main.m */; };
+		833D1BF41FCDE06C00BB78F2 /* Login+Signup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 833D1BF31FCDE06C00BB78F2 /* Login+Signup.storyboard */; };
+		834462631FEDC3DA007E584C /* SF-UI-Text in Resources */ = {isa = PBXBuildFile; fileRef = 834462611FEDC3D8007E584C /* SF-UI-Text */; };
+		834462641FEDC3DA007E584C /* SF-UI-Display in Resources */ = {isa = PBXBuildFile; fileRef = 834462621FEDC3D8007E584C /* SF-UI-Display */; };
+		834462671FEFDA5D007E584C /* RSOSSplashVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 834462661FEFDA5D007E584C /* RSOSSplashVC.m */; };
+		834A25F91FCF7A26006C557F /* RSOSUIPhoneTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 834A25F81FCF7A26006C557F /* RSOSUIPhoneTextField.m */; };
+		835894291FCE7DFA0006CBAB /* RSOSVerificationPhoneVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 835894281FCE7DFA0006CBAB /* RSOSVerificationPhoneVC.m */; };
+		8358942C1FCE7E060006CBAB /* RSOSVerificationCodeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8358942B1FCE7E060006CBAB /* RSOSVerificationCodeVC.m */; };
+		835894311FCE91800006CBAB /* RSOSProfileSummaryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 835894301FCE91800006CBAB /* RSOSProfileSummaryVC.m */; };
+		835D61B91FCFBF4000D9D5F3 /* RSOSDataUserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 835D61B81FCFBF4000D9D5F3 /* RSOSDataUserManager.m */; };
+		9C3B905C20111DC100CC6646 /* RSOSFailSafeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C3B905B20111DC000CC6646 /* RSOSFailSafeManager.m */; };
+		9C5B0E022062E4D100860CA8 /* RSOSDataFileUploadAWSSignature.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C5B0E002062E4D100860CA8 /* RSOSDataFileUploadAWSSignature.m */; };
+		9C6FF5B320320FF000CB3A72 /* RSOSUtilsImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C6FF5B120320FEF00CB3A72 /* RSOSUtilsImage.m */; };
+		9C7D4FC720193DFD00B8DFD5 /* RSOSDatePickerDialogVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C7D4FC520193DFD00B8DFD5 /* RSOSDatePickerDialogVC.m */; };
+		9C7D4FC820193DFD00B8DFD5 /* RSOSDatePickerDialogVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C7D4FC620193DFD00B8DFD5 /* RSOSDatePickerDialogVC.xib */; };
+		9C7D4FD120194FAA00B8DFD5 /* RSOSAgreementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C7D4FD020194FAA00B8DFD5 /* RSOSAgreementViewController.m */; };
+		9CB9CDAC202A12EA00EDD5EF /* privacy.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9CB9CDAB202A12EA00EDD5EF /* privacy.txt */; };
+		9CB9CDAE202A12F300EDD5EF /* terms.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9CB9CDAD202A12F300EDD5EF /* terms.txt */; };
+		9CB9CE5D202D472900EDD5EF /* RSOSAppManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB9CE5C202D472900EDD5EF /* RSOSAppManager.m */; };
+		9CB9CE82202D611300EDD5EF /* RSOSLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB9CE80202D611300EDD5EF /* RSOSLocationManager.m */; };
+		D00F926CA1B4A543335BEA5B /* libPods-EmergencyReferenceApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EF70099B21B578E71B00B2D8 /* libPods-EmergencyReferenceApp.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4B9B4FF993B0E72129C35B45 /* Pods-EmergencyReferenceApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmergencyReferenceApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EmergencyReferenceApp/Pods-EmergencyReferenceApp.debug.xcconfig"; sourceTree = "<group>"; };
+		83159D121FCE9AB8000E76AC /* ContactListItemTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactListItemTVC.xib; sourceTree = "<group>"; };
+		83159D141FCE9AC6000E76AC /* RSOSContactListItemTVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSOSContactListItemTVC.h; sourceTree = "<group>"; };
+		83159D151FCE9AC6000E76AC /* RSOSContactListItemTVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSOSContactListItemTVC.m; sourceTree = "<group>"; };
+		83159D171FCE9D02000E76AC /* RSOSContactListVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSOSContactListVC.h; sourceTree = "<group>"; };
+		83159D181FCE9D02000E76AC /* RSOSContactListVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSOSContactListVC.m; sourceTree = "<group>"; };
+		83159D1A1FCEA0BB000E76AC /* RSOSDeviceListVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSOSDeviceListVC.h; sourceTree = "<group>"; };
+		83159D1B1FCEA0BB000E76AC /* RSOSDeviceListVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSOSDeviceListVC.m; sourceTree = "<group>"; };
+		83159D1E1FCEA0CF000E76AC /* DeviceListItemTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DeviceListItemTVC.xib; sourceTree = "<group>"; };
+		83159D231FCEA130000E76AC /* RSOSDeviceListItemTVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSOSDeviceListItemTVC.h; sourceTree = "<group>"; };
+		83159D241FCEA130000E76AC /* RSOSDeviceListItemTVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSOSDeviceListItemTVC.m; sourceTree = "<group>"; };
+		83159D261FCEC3ED000E76AC /* RSOSContactDetailsVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSOSContactDetailsVC.h; sourceTree = "<group>"; };
+		83159D271FCEC3ED000E76AC /* RSOSContactDetailsVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSOSContactDetailsVC.m; sourceTree = "<group>"; };
+		83159D291FCED48A000E76AC /* RSOSSettingsVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSOSSettingsVC.h; sourceTree = "<group>"; };
+		83159D2A1FCED48A000E76AC /* RSOSSettingsVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSOSSettingsVC.m; sourceTree = "<group>"; };
+		8315D6331FCEF20D004C197A /* RSOSProfileDetailsVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSOSProfileDetailsVC.h; sourceTree = "<group>"; };
+		8315D6341FCEF20D004C197A /* RSOSProfileDetailsVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSOSProfileDetailsVC.m; sourceTree = "<group>"; };
+		8315D6381FCF47B5004C197A /* RSOSCallFlowAPIManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSOSCallFlowAPIManager.h; sourceTree = "<group>"; };
+		8315D6391FCF47B5004C197A /* RSOSCallFlowAPIManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSOSCallFlowAPIManager.m; sourceTree = "<group>"; };
+		831A79C61FD11A1600100C80 /* ListPopover.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListPopover.xib; sourceTree = "<group>"; };
+		831A79C81FD11A5800100C80 /* RSOSListPopoverVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSOSListPopoverVC.h; sourceTree = "<group>"; };
+		831A79C91FD11A5800100C80 /* RSOSListPopoverVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSOSListPopoverVC.m; sourceTree = "<group>"; };
+		831A79CB1FD11A7500100C80 /* ListPopoverItemTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListPopoverItemTVC.xib; sourceTree = "<group>"; };
+		831A79CD1FD11A9600100C80 /* RSOSListPopoverItemTVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSOSListPopoverItemTVC.h; sourceTree = "<group>"; };
+		831A79CE1FD11A9600100C80 /* RSOSListPopoverItemTVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSOSListPopoverItemTVC.m; sourceTree = "<group>"; };
+		831A79D61FD12CE800100C80 /* CalendarWeekItemTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalendarWeekItemTVC.xib; sourceTree = "<group>"; };
+		831A79D81FD12D3C00100C80 /* RSOSCalendarWeekItemTVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSOSCalendarWeekItemTVC.h; sourceTree = "<group>"; };
+		831A79D91FD12D3C00100C80 /* RSOSCalendarWeekItemTVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSOSCalendarWeekItemTVC.m; sourceTree = "<group>"; };
+		831A79DC1FD146BB00100C80 /* CalendarDialog.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalendarDialog.xib; sourceTree = "<group>"; };
+		831A79DE1FD146CE00100C80 /* RSOSCalendarDialogVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSOSCalendarDialogVC.h; sourceTree = "<group>"; };
+		831A79DF1FD146CE00100C80 /* RSOSCalendarDialogVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSOSCalendarDialogVC.m; sourceTree = "<group>"; };
+		832F8D691FCE0D7D00462A81 /* RSOSLoginVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSOSLoginVC.h; sourceTree = "<group>"; };
+		832F8D6A1FCE0D7D00462A81 /* RSOSLoginVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSOSLoginVC.m; sourceTree = "<group>"; };
+		832F8D6C1FCE0D8800462A81 /* RSOSSignupVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSOSSignupVC.h; sourceTree = "<group>"; };
+		832F8D6D1FCE0D8800462A81 /* RSOSSignupVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSOSSignupVC.m; sourceTree = "<group>"; };
+		832F8D6F1FCE0D9C00462A81 /* RSOSForgotPasswordVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSOSForgotPasswordVC.h; sourceTree = "<group>"; };
+		832F8D701FCE0D9C00462A81 /* RSOSForgotPasswordVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSOSForgotPasswordVC.m; sourceTree = "<group>"; };
+		832F8D751FCE0FFF00462A81 /* RSOSGlobalController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSOSGlobalController.h; sourceTree = "<group>"; };
+		832F8D761FCE0FFF00462A81 /* RSOSGlobalController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSOSGlobalController.m; sourceTree = "<group>"; };
+		832F8D781FCE103800462A81 /* UIColor+RSOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+RSOS.h"; sourceTree = "<group>"; };
+		832F8D791FCE103800462A81 /* UIColor+RSOS.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+RSOS.m"; sourceTree = "<group>"; };
+		83366A351FE66464007DC7C9 /* RSOSAnimatedTransitioning.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSOSAnimatedTransitioning.h; sourceTree = "<group>"; };
+		83366A361FE66464007DC7C9 /* RSOSAnimatedTransitioning.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSOSAnimatedTransitioning.m; sourceTree = "<group>"; };
+		83366A381FE66479007DC7C9 /* RSOSFadeTransitionDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSOSFadeTransitionDelegate.h; sourceTree = "<group>"; };
+		83366A391FE66479007DC7C9 /* RSOSFadeTransitionDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSOSFadeTransitionDelegate.m; sourceTree = "<group>"; };
+		833D1BD61FCDD07700BB78F2 /* EmergencyReferenceApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmergencyReferenceApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		833D1BD91FCDD07700BB78F2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		833D1BDA1FCDD07700BB78F2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		833D1BE01FCDD07700BB78F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		833D1BE21FCDD07700BB78F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		833D1BE51FCDD07700BB78F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		833D1BE71FCDD07700BB78F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		833D1BE81FCDD07700BB78F2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		833D1BF31FCDE06C00BB78F2 /* Login+Signup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Login+Signup.storyboard"; sourceTree = "<group>"; };
+		834462611FEDC3D8007E584C /* SF-UI-Text */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "SF-UI-Text"; sourceTree = "<group>"; };
+		834462621FEDC3D8007E584C /* SF-UI-Display */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "SF-UI-Display"; sourceTree = "<group>"; };
+		834462651FEFDA5D007E584C /* RSOSSplashVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSOSSplashVC.h; sourceTree = "<group>"; };
+		834462661FEFDA5D007E584C /* RSOSSplashVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSOSSplashVC.m; sourceTree = "<group>"; };
+		834A25F71FCF7A26006C557F /* RSOSUIPhoneTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSOSUIPhoneTextField.h; sourceTree = "<group>"; };
+		834A25F81FCF7A26006C557F /* RSOSUIPhoneTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSOSUIPhoneTextField.m; sourceTree = "<group>"; };
+		835894271FCE7DFA0006CBAB /* RSOSVerificationPhoneVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSOSVerificationPhoneVC.h; sourceTree = "<group>"; };
+		835894281FCE7DFA0006CBAB /* RSOSVerificationPhoneVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSOSVerificationPhoneVC.m; sourceTree = "<group>"; };
+		8358942A1FCE7E060006CBAB /* RSOSVerificationCodeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSOSVerificationCodeVC.h; sourceTree = "<group>"; };
+		8358942B1FCE7E060006CBAB /* RSOSVerificationCodeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSOSVerificationCodeVC.m; sourceTree = "<group>"; };
+		8358942F1FCE91800006CBAB /* RSOSProfileSummaryVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSOSProfileSummaryVC.h; sourceTree = "<group>"; };
+		835894301FCE91800006CBAB /* RSOSProfileSummaryVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSOSProfileSummaryVC.m; sourceTree = "<group>"; };
+		835D61B71FCFBF4000D9D5F3 /* RSOSDataUserManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSOSDataUserManager.h; sourceTree = "<group>"; };
+		835D61B81FCFBF4000D9D5F3 /* RSOSDataUserManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSOSDataUserManager.m; sourceTree = "<group>"; };
+		9C3B905A20111DC000CC6646 /* RSOSFailSafeManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSOSFailSafeManager.h; sourceTree = "<group>"; };
+		9C3B905B20111DC000CC6646 /* RSOSFailSafeManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSOSFailSafeManager.m; sourceTree = "<group>"; };
+		9C3B905D20114C2700CC6646 /* EmergencyReferenceApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EmergencyReferenceApp.entitlements; sourceTree = "<group>"; };
+		9C48E5D22000113100B46B7F /* VSNConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VSNConstants.h; sourceTree = "<group>"; };
+		9C5B0E002062E4D100860CA8 /* RSOSDataFileUploadAWSSignature.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSOSDataFileUploadAWSSignature.m; sourceTree = "<group>"; };
+		9C5B0E012062E4D100860CA8 /* RSOSDataFileUploadAWSSignature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSOSDataFileUploadAWSSignature.h; sourceTree = "<group>"; };
+		9C6FF5B120320FEF00CB3A72 /* RSOSUtilsImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSOSUtilsImage.m; sourceTree = "<group>"; };
+		9C6FF5B220320FF000CB3A72 /* RSOSUtilsImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSOSUtilsImage.h; sourceTree = "<group>"; };
+		9C7D4FC420193DFD00B8DFD5 /* RSOSDatePickerDialogVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSOSDatePickerDialogVC.h; sourceTree = "<group>"; };
+		9C7D4FC520193DFD00B8DFD5 /* RSOSDatePickerDialogVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSOSDatePickerDialogVC.m; sourceTree = "<group>"; };
+		9C7D4FC620193DFD00B8DFD5 /* RSOSDatePickerDialogVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RSOSDatePickerDialogVC.xib; sourceTree = "<group>"; };
+		9C7D4FCF20194FAA00B8DFD5 /* RSOSAgreementViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSOSAgreementViewController.h; sourceTree = "<group>"; };
+		9C7D4FD020194FAA00B8DFD5 /* RSOSAgreementViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSOSAgreementViewController.m; sourceTree = "<group>"; };
+		9CB9CDAB202A12EA00EDD5EF /* privacy.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = privacy.txt; sourceTree = "<group>"; };
+		9CB9CDAD202A12F300EDD5EF /* terms.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = terms.txt; sourceTree = "<group>"; };
+		9CB9CE3E202D446800EDD5EF /* AppConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppConstants.h; sourceTree = "<group>"; };
+		9CB9CE5B202D472900EDD5EF /* RSOSAppManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSOSAppManager.h; sourceTree = "<group>"; };
+		9CB9CE5C202D472900EDD5EF /* RSOSAppManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSOSAppManager.m; sourceTree = "<group>"; };
+		9CB9CE80202D611300EDD5EF /* RSOSLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSOSLocationManager.m; sourceTree = "<group>"; };
+		9CB9CE81202D611300EDD5EF /* RSOSLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSOSLocationManager.h; sourceTree = "<group>"; };
+		A694275A12116F0F00C6038C /* libPods-Kronos.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Kronos.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF0AEF695E98ECCB4778993E /* Pods-EmergencyReferenceApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmergencyReferenceApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-EmergencyReferenceApp/Pods-EmergencyReferenceApp.release.xcconfig"; sourceTree = "<group>"; };
+		EF70099B21B578E71B00B2D8 /* libPods-EmergencyReferenceApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EmergencyReferenceApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		833D1BD31FCDD07700BB78F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D00F926CA1B4A543335BEA5B /* libPods-EmergencyReferenceApp.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		075E7316498696DC16B2A215 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4B9B4FF993B0E72129C35B45 /* Pods-EmergencyReferenceApp.debug.xcconfig */,
+				EF0AEF695E98ECCB4778993E /* Pods-EmergencyReferenceApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5FA30099E62268885BAD6A3E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A694275A12116F0F00C6038C /* libPods-Kronos.a */,
+				EF70099B21B578E71B00B2D8 /* libPods-EmergencyReferenceApp.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		830CACC41FCF5F1A00BEE1F5 /* ApiDispatcher */ = {
+			isa = PBXGroup;
+			children = (
+				8315D6371FCF479A004C197A /* CallFlow */,
+				9C3B905E20127BA000CC6646 /* FailSafe */,
+			);
+			path = ApiDispatcher;
+			sourceTree = "<group>";
+		};
+		83159D0E1FCE9A84000E76AC /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				83159D1D1FCEA0C0000E76AC /* DeviceListItemTVC */,
+				83159D111FCE9AA9000E76AC /* ContactListItemTVC */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		83159D111FCE9AA9000E76AC /* ContactListItemTVC */ = {
+			isa = PBXGroup;
+			children = (
+				83159D121FCE9AB8000E76AC /* ContactListItemTVC.xib */,
+				83159D141FCE9AC6000E76AC /* RSOSContactListItemTVC.h */,
+				83159D151FCE9AC6000E76AC /* RSOSContactListItemTVC.m */,
+			);
+			path = ContactListItemTVC;
+			sourceTree = "<group>";
+		};
+		83159D1D1FCEA0C0000E76AC /* DeviceListItemTVC */ = {
+			isa = PBXGroup;
+			children = (
+				83159D1E1FCEA0CF000E76AC /* DeviceListItemTVC.xib */,
+				83159D231FCEA130000E76AC /* RSOSDeviceListItemTVC.h */,
+				83159D241FCEA130000E76AC /* RSOSDeviceListItemTVC.m */,
+			);
+			path = DeviceListItemTVC;
+			sourceTree = "<group>";
+		};
+		8315D6371FCF479A004C197A /* CallFlow */ = {
+			isa = PBXGroup;
+			children = (
+				8315D6381FCF47B5004C197A /* RSOSCallFlowAPIManager.h */,
+				8315D6391FCF47B5004C197A /* RSOSCallFlowAPIManager.m */,
+			);
+			path = CallFlow;
+			sourceTree = "<group>";
+		};
+		831A79C41FD119EE00100C80 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				831A79D01FD12C8100100C80 /* CalendarView */,
+				831A79C51FD119F500100C80 /* ListPopover */,
+				9C7D4FC320193D4500B8DFD5 /* DatePicker */,
+				9C7D4FCE20194F7400B8DFD5 /* AgreementView */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		831A79C51FD119F500100C80 /* ListPopover */ = {
+			isa = PBXGroup;
+			children = (
+				831A79C61FD11A1600100C80 /* ListPopover.xib */,
+				831A79C81FD11A5800100C80 /* RSOSListPopoverVC.h */,
+				831A79C91FD11A5800100C80 /* RSOSListPopoverVC.m */,
+				831A79CB1FD11A7500100C80 /* ListPopoverItemTVC.xib */,
+				831A79CD1FD11A9600100C80 /* RSOSListPopoverItemTVC.h */,
+				831A79CE1FD11A9600100C80 /* RSOSListPopoverItemTVC.m */,
+			);
+			path = ListPopover;
+			sourceTree = "<group>";
+		};
+		831A79D01FD12C8100100C80 /* CalendarView */ = {
+			isa = PBXGroup;
+			children = (
+				831A79D61FD12CE800100C80 /* CalendarWeekItemTVC.xib */,
+				831A79D81FD12D3C00100C80 /* RSOSCalendarWeekItemTVC.h */,
+				831A79D91FD12D3C00100C80 /* RSOSCalendarWeekItemTVC.m */,
+				831A79DC1FD146BB00100C80 /* CalendarDialog.xib */,
+				831A79DE1FD146CE00100C80 /* RSOSCalendarDialogVC.h */,
+				831A79DF1FD146CE00100C80 /* RSOSCalendarDialogVC.m */,
+			);
+			path = CalendarView;
+			sourceTree = "<group>";
+		};
+		832F8D681FCE0D5B00462A81 /* Login+Signup */ = {
+			isa = PBXGroup;
+			children = (
+				834462651FEFDA5D007E584C /* RSOSSplashVC.h */,
+				834462661FEFDA5D007E584C /* RSOSSplashVC.m */,
+				832F8D691FCE0D7D00462A81 /* RSOSLoginVC.h */,
+				832F8D6A1FCE0D7D00462A81 /* RSOSLoginVC.m */,
+				832F8D6C1FCE0D8800462A81 /* RSOSSignupVC.h */,
+				832F8D6D1FCE0D8800462A81 /* RSOSSignupVC.m */,
+				832F8D6F1FCE0D9C00462A81 /* RSOSForgotPasswordVC.h */,
+				832F8D701FCE0D9C00462A81 /* RSOSForgotPasswordVC.m */,
+				835894271FCE7DFA0006CBAB /* RSOSVerificationPhoneVC.h */,
+				835894281FCE7DFA0006CBAB /* RSOSVerificationPhoneVC.m */,
+				8358942A1FCE7E060006CBAB /* RSOSVerificationCodeVC.h */,
+				8358942B1FCE7E060006CBAB /* RSOSVerificationCodeVC.m */,
+			);
+			path = "Login+Signup";
+			sourceTree = "<group>";
+		};
+		832F8D731FCE0FDE00462A81 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				8358942F1FCE91800006CBAB /* RSOSProfileSummaryVC.h */,
+				835894301FCE91800006CBAB /* RSOSProfileSummaryVC.m */,
+				8315D6331FCEF20D004C197A /* RSOSProfileDetailsVC.h */,
+				8315D6341FCEF20D004C197A /* RSOSProfileDetailsVC.m */,
+				83159D171FCE9D02000E76AC /* RSOSContactListVC.h */,
+				83159D181FCE9D02000E76AC /* RSOSContactListVC.m */,
+				83159D261FCEC3ED000E76AC /* RSOSContactDetailsVC.h */,
+				83159D271FCEC3ED000E76AC /* RSOSContactDetailsVC.m */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		832F8D741FCE0FE400462A81 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				832F8D751FCE0FFF00462A81 /* RSOSGlobalController.h */,
+				832F8D761FCE0FFF00462A81 /* RSOSGlobalController.m */,
+				832F8D781FCE103800462A81 /* UIColor+RSOS.h */,
+				832F8D791FCE103800462A81 /* UIColor+RSOS.m */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		83366A341FE663A9007DC7C9 /* FadeTransitionDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				83366A351FE66464007DC7C9 /* RSOSAnimatedTransitioning.h */,
+				83366A361FE66464007DC7C9 /* RSOSAnimatedTransitioning.m */,
+				83366A381FE66479007DC7C9 /* RSOSFadeTransitionDelegate.h */,
+				83366A391FE66479007DC7C9 /* RSOSFadeTransitionDelegate.m */,
+			);
+			path = FadeTransitionDelegate;
+			sourceTree = "<group>";
+		};
+		833D1BCD1FCDD07700BB78F2 = {
+			isa = PBXGroup;
+			children = (
+				9C3B905D20114C2700CC6646 /* EmergencyReferenceApp.entitlements */,
+				833D1BD81FCDD07700BB78F2 /* ERA */,
+				833D1BD71FCDD07700BB78F2 /* Products */,
+				075E7316498696DC16B2A215 /* Pods */,
+				5FA30099E62268885BAD6A3E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		833D1BD71FCDD07700BB78F2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				833D1BD61FCDD07700BB78F2 /* EmergencyReferenceApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		833D1BD81FCDD07700BB78F2 /* ERA */ = {
+			isa = PBXGroup;
+			children = (
+				9CB9CE3E202D446800EDD5EF /* AppConstants.h */,
+				833D1BD91FCDD07700BB78F2 /* AppDelegate.h */,
+				833D1BDA1FCDD07700BB78F2 /* AppDelegate.m */,
+				9CB9CE5B202D472900EDD5EF /* RSOSAppManager.h */,
+				9CB9CE5C202D472900EDD5EF /* RSOSAppManager.m */,
+				9CB9CE81202D611300EDD5EF /* RSOSLocationManager.h */,
+				9CB9CE80202D611300EDD5EF /* RSOSLocationManager.m */,
+				9C6FF5B220320FF000CB3A72 /* RSOSUtilsImage.h */,
+				9C6FF5B120320FEF00CB3A72 /* RSOSUtilsImage.m */,
+				833D1BF01FCDD09200BB78F2 /* Model */,
+				833D1BF21FCDD09B00BB78F2 /* Controller */,
+				833D1BF11FCDD09700BB78F2 /* View */,
+				834A25F51FCF795A006C557F /* Library */,
+				9C7D4FC920194F0700B8DFD5 /* Resources */,
+				833D1BE71FCDD07700BB78F2 /* Info.plist */,
+				833D1BE81FCDD07700BB78F2 /* main.m */,
+			);
+			path = ERA;
+			sourceTree = "<group>";
+		};
+		833D1BF01FCDD09200BB78F2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				830CACC41FCF5F1A00BEE1F5 /* ApiDispatcher */,
+				835D61B61FCFBF0900D9D5F3 /* User */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		833D1BF11FCDD09700BB78F2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				834462601FEDC3C7007E584C /* Fonts */,
+				831A79C41FD119EE00100C80 /* CustomView */,
+				83159D0E1FCE9A84000E76AC /* TableViewCell */,
+				833D1BDF1FCDD07700BB78F2 /* Main.storyboard */,
+				833D1BE21FCDD07700BB78F2 /* Assets.xcassets */,
+				833D1BE41FCDD07700BB78F2 /* LaunchScreen.storyboard */,
+				833D1BF31FCDE06C00BB78F2 /* Login+Signup.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		833D1BF21FCDD09B00BB78F2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				832F8D741FCE0FE400462A81 /* Global */,
+				832F8D731FCE0FDE00462A81 /* Profile */,
+				8358942D1FCE915E0006CBAB /* Bluetooth */,
+				8358942E1FCE91640006CBAB /* Settings */,
+				832F8D681FCE0D5B00462A81 /* Login+Signup */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		834462601FEDC3C7007E584C /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				834462621FEDC3D8007E584C /* SF-UI-Display */,
+				834462611FEDC3D8007E584C /* SF-UI-Text */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		834A25F51FCF795A006C557F /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				83366A341FE663A9007DC7C9 /* FadeTransitionDelegate */,
+				834A25F61FCF796C006C557F /* KRNUIPhoneTextField */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		834A25F61FCF796C006C557F /* KRNUIPhoneTextField */ = {
+			isa = PBXGroup;
+			children = (
+				834A25F71FCF7A26006C557F /* RSOSUIPhoneTextField.h */,
+				834A25F81FCF7A26006C557F /* RSOSUIPhoneTextField.m */,
+			);
+			path = KRNUIPhoneTextField;
+			sourceTree = "<group>";
+		};
+		8358942D1FCE915E0006CBAB /* Bluetooth */ = {
+			isa = PBXGroup;
+			children = (
+				9C48E5D02000111000B46B7F /* Devices */,
+				83159D1A1FCEA0BB000E76AC /* RSOSDeviceListVC.h */,
+				83159D1B1FCEA0BB000E76AC /* RSOSDeviceListVC.m */,
+			);
+			path = Bluetooth;
+			sourceTree = "<group>";
+		};
+		8358942E1FCE91640006CBAB /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				83159D291FCED48A000E76AC /* RSOSSettingsVC.h */,
+				83159D2A1FCED48A000E76AC /* RSOSSettingsVC.m */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		835D61B61FCFBF0900D9D5F3 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				835D61B71FCFBF4000D9D5F3 /* RSOSDataUserManager.h */,
+				835D61B81FCFBF4000D9D5F3 /* RSOSDataUserManager.m */,
+				9C5B0E012062E4D100860CA8 /* RSOSDataFileUploadAWSSignature.h */,
+				9C5B0E002062E4D100860CA8 /* RSOSDataFileUploadAWSSignature.m */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		9C3B905E20127BA000CC6646 /* FailSafe */ = {
+			isa = PBXGroup;
+			children = (
+				9C3B905A20111DC000CC6646 /* RSOSFailSafeManager.h */,
+				9C3B905B20111DC000CC6646 /* RSOSFailSafeManager.m */,
+			);
+			path = FailSafe;
+			sourceTree = "<group>";
+		};
+		9C48E5D02000111000B46B7F /* Devices */ = {
+			isa = PBXGroup;
+			children = (
+				9C48E5D12000112100B46B7F /* VSN-ALRT */,
+			);
+			path = Devices;
+			sourceTree = "<group>";
+		};
+		9C48E5D12000112100B46B7F /* VSN-ALRT */ = {
+			isa = PBXGroup;
+			children = (
+				9C48E5D22000113100B46B7F /* VSNConstants.h */,
+			);
+			path = "VSN-ALRT";
+			sourceTree = "<group>";
+		};
+		9C7D4FC320193D4500B8DFD5 /* DatePicker */ = {
+			isa = PBXGroup;
+			children = (
+				9C7D4FC420193DFD00B8DFD5 /* RSOSDatePickerDialogVC.h */,
+				9C7D4FC520193DFD00B8DFD5 /* RSOSDatePickerDialogVC.m */,
+				9C7D4FC620193DFD00B8DFD5 /* RSOSDatePickerDialogVC.xib */,
+			);
+			path = DatePicker;
+			sourceTree = "<group>";
+		};
+		9C7D4FC920194F0700B8DFD5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9CB9CDAB202A12EA00EDD5EF /* privacy.txt */,
+				9CB9CDAD202A12F300EDD5EF /* terms.txt */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9C7D4FCE20194F7400B8DFD5 /* AgreementView */ = {
+			isa = PBXGroup;
+			children = (
+				9C7D4FCF20194FAA00B8DFD5 /* RSOSAgreementViewController.h */,
+				9C7D4FD020194FAA00B8DFD5 /* RSOSAgreementViewController.m */,
+			);
+			path = AgreementView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		833D1BD51FCDD07700BB78F2 /* EmergencyReferenceApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 833D1BEC1FCDD07700BB78F2 /* Build configuration list for PBXNativeTarget "EmergencyReferenceApp" */;
+			buildPhases = (
+				9EF593347E42E0FD740C3294 /* [CP] Check Pods Manifest.lock */,
+				833D1BD21FCDD07700BB78F2 /* Sources */,
+				833D1BD31FCDD07700BB78F2 /* Frameworks */,
+				833D1BD41FCDD07700BB78F2 /* Resources */,
+				D619F3FA3E784EED0FE549F5 /* [CP] Embed Pods Frameworks */,
+				470E04890CF84245E735F15F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EmergencyReferenceApp;
+			productName = Kronos;
+			productReference = 833D1BD61FCDD07700BB78F2 /* EmergencyReferenceApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		833D1BCE1FCDD07700BB78F2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = RSOS;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = RapidSOS;
+				TargetAttributes = {
+					833D1BD51FCDD07700BB78F2 = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 833D1BD11FCDD07700BB78F2 /* Build configuration list for PBXProject "EmergencyReferenceApp" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 833D1BCD1FCDD07700BB78F2;
+			productRefGroup = 833D1BD71FCDD07700BB78F2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				833D1BD51FCDD07700BB78F2 /* EmergencyReferenceApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		833D1BD41FCDD07700BB78F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				831A79C71FD11A1600100C80 /* ListPopover.xib in Resources */,
+				833D1BF41FCDE06C00BB78F2 /* Login+Signup.storyboard in Resources */,
+				831A79CC1FD11A7500100C80 /* ListPopoverItemTVC.xib in Resources */,
+				834462631FEDC3DA007E584C /* SF-UI-Text in Resources */,
+				834462641FEDC3DA007E584C /* SF-UI-Display in Resources */,
+				831A79DD1FD146BB00100C80 /* CalendarDialog.xib in Resources */,
+				9C7D4FC820193DFD00B8DFD5 /* RSOSDatePickerDialogVC.xib in Resources */,
+				833D1BE61FCDD07700BB78F2 /* LaunchScreen.storyboard in Resources */,
+				9CB9CDAE202A12F300EDD5EF /* terms.txt in Resources */,
+				83159D131FCE9AB8000E76AC /* ContactListItemTVC.xib in Resources */,
+				833D1BE31FCDD07700BB78F2 /* Assets.xcassets in Resources */,
+				83159D1F1FCEA0CF000E76AC /* DeviceListItemTVC.xib in Resources */,
+				9CB9CDAC202A12EA00EDD5EF /* privacy.txt in Resources */,
+				831A79D71FD12CE800100C80 /* CalendarWeekItemTVC.xib in Resources */,
+				833D1BE11FCDD07700BB78F2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		470E04890CF84245E735F15F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-EmergencyReferenceApp/Pods-EmergencyReferenceApp-resources.sh",
+				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EmergencyReferenceApp/Pods-EmergencyReferenceApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9EF593347E42E0FD740C3294 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EmergencyReferenceApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D619F3FA3E784EED0FE549F5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-EmergencyReferenceApp/Pods-EmergencyReferenceApp-frameworks.sh",
+				"${PODS_ROOT}/Beacon/BeaconSDK/BeaconSDK.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BeaconSDK.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EmergencyReferenceApp/Pods-EmergencyReferenceApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		833D1BD21FCDD07700BB78F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				831A79DA1FD12D3C00100C80 /* RSOSCalendarWeekItemTVC.m in Sources */,
+				831A79CA1FD11A5800100C80 /* RSOSListPopoverVC.m in Sources */,
+				832F8D711FCE0D9C00462A81 /* RSOSForgotPasswordVC.m in Sources */,
+				83159D2B1FCED48A000E76AC /* RSOSSettingsVC.m in Sources */,
+				9C7D4FC720193DFD00B8DFD5 /* RSOSDatePickerDialogVC.m in Sources */,
+				9C7D4FD120194FAA00B8DFD5 /* RSOSAgreementViewController.m in Sources */,
+				834A25F91FCF7A26006C557F /* RSOSUIPhoneTextField.m in Sources */,
+				8315D6351FCEF20D004C197A /* RSOSProfileDetailsVC.m in Sources */,
+				83159D1C1FCEA0BB000E76AC /* RSOSDeviceListVC.m in Sources */,
+				83159D251FCEA130000E76AC /* RSOSDeviceListItemTVC.m in Sources */,
+				83159D191FCE9D02000E76AC /* RSOSContactListVC.m in Sources */,
+				832F8D6B1FCE0D7D00462A81 /* RSOSLoginVC.m in Sources */,
+				9C3B905C20111DC100CC6646 /* RSOSFailSafeManager.m in Sources */,
+				834462671FEFDA5D007E584C /* RSOSSplashVC.m in Sources */,
+				831A79CF1FD11A9600100C80 /* RSOSListPopoverItemTVC.m in Sources */,
+				832F8D771FCE0FFF00462A81 /* RSOSGlobalController.m in Sources */,
+				833D1BE91FCDD07700BB78F2 /* main.m in Sources */,
+				835894291FCE7DFA0006CBAB /* RSOSVerificationPhoneVC.m in Sources */,
+				8358942C1FCE7E060006CBAB /* RSOSVerificationCodeVC.m in Sources */,
+				83366A3A1FE66479007DC7C9 /* RSOSFadeTransitionDelegate.m in Sources */,
+				83159D161FCE9AC6000E76AC /* RSOSContactListItemTVC.m in Sources */,
+				832F8D7A1FCE103800462A81 /* UIColor+RSOS.m in Sources */,
+				835D61B91FCFBF4000D9D5F3 /* RSOSDataUserManager.m in Sources */,
+				83159D281FCEC3ED000E76AC /* RSOSContactDetailsVC.m in Sources */,
+				9CB9CE5D202D472900EDD5EF /* RSOSAppManager.m in Sources */,
+				831A79E01FD146CE00100C80 /* RSOSCalendarDialogVC.m in Sources */,
+				832F8D6E1FCE0D8800462A81 /* RSOSSignupVC.m in Sources */,
+				9CB9CE82202D611300EDD5EF /* RSOSLocationManager.m in Sources */,
+				9C5B0E022062E4D100860CA8 /* RSOSDataFileUploadAWSSignature.m in Sources */,
+				8315D63A1FCF47B5004C197A /* RSOSCallFlowAPIManager.m in Sources */,
+				9C6FF5B320320FF000CB3A72 /* RSOSUtilsImage.m in Sources */,
+				833D1BDB1FCDD07700BB78F2 /* AppDelegate.m in Sources */,
+				835894311FCE91800006CBAB /* RSOSProfileSummaryVC.m in Sources */,
+				83366A371FE66464007DC7C9 /* RSOSAnimatedTransitioning.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		833D1BDF1FCDD07700BB78F2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				833D1BE01FCDD07700BB78F2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		833D1BE41FCDD07700BB78F2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				833D1BE51FCDD07700BB78F2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		833D1BEA1FCDD07700BB78F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		833D1BEB1FCDD07700BB78F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		833D1BED1FCDD07700BB78F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B9B4FF993B0E72129C35B45 /* Pods-EmergencyReferenceApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = EmergencyReferenceApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S7Q3Q87HZ6;
+				INFOPLIST_FILE = "$(SRCROOT)/ERA/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rapidsos.ERA;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		833D1BEE1FCDD07700BB78F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF0AEF695E98ECCB4778993E /* Pods-EmergencyReferenceApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = EmergencyReferenceApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S7Q3Q87HZ6;
+				INFOPLIST_FILE = "$(SRCROOT)/ERA/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rapidsos.ERA;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		833D1BD11FCDD07700BB78F2 /* Build configuration list for PBXProject "EmergencyReferenceApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				833D1BEA1FCDD07700BB78F2 /* Debug */,
+				833D1BEB1FCDD07700BB78F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		833D1BEC1FCDD07700BB78F2 /* Build configuration list for PBXNativeTarget "EmergencyReferenceApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				833D1BED1FCDD07700BB78F2 /* Debug */,
+				833D1BEE1FCDD07700BB78F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 833D1BCE1FCDD07700BB78F2 /* Project object */;
+}
