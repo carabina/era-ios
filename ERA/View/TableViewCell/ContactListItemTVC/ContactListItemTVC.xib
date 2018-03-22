@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TVC_CONTACTLISTITEM" rowHeight="93" id="hEg-er-rxy" customClass="RSOSContactListItemTVC">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="93"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hEg-er-rxy" id="Fbb-k0-xxC">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="92.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dhx-yt-faz" userLabel="View - Container">
+                        <rect key="frame" x="8" y="3" width="359" height="86.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chris Lin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y4L-ms-QSr" userLabel="Label - Name">
+                                <rect key="frame" x="16" y="12" width="327" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="4K5-h9-Aa2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="chris100@gmail.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="id1-V3-6wj" userLabel="Label - Email">
+                                <rect key="frame" x="16.5" y="36" width="327" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="jpj-Rh-fKH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                <color key="textColor" red="0.21568627450980393" green="0.21568627450980393" blue="0.21568627450980393" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+1 919 523 5424" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lzn-UT-dmc" userLabel="Label - Phone">
+                                <rect key="frame" x="16" y="55" width="327" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="vEh-3A-3lF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                <color key="textColor" red="0.2156862745" green="0.2156862745" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.792156862745098" green="0.83137254901960778" blue="0.87058823529411766" alpha="0.40000000000000002" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="y4L-ms-QSr" firstAttribute="top" secondItem="Dhx-yt-faz" secondAttribute="top" constant="12" id="17v-Uv-cKY"/>
+                            <constraint firstItem="lzn-UT-dmc" firstAttribute="width" secondItem="id1-V3-6wj" secondAttribute="width" id="EW7-PT-1vA"/>
+                            <constraint firstItem="id1-V3-6wj" firstAttribute="top" secondItem="y4L-ms-QSr" secondAttribute="bottom" constant="3" id="TLA-MK-2p3"/>
+                            <constraint firstItem="y4L-ms-QSr" firstAttribute="leading" secondItem="Dhx-yt-faz" secondAttribute="leading" constant="16" id="Zm2-fv-N2N"/>
+                            <constraint firstItem="lzn-UT-dmc" firstAttribute="centerX" secondItem="id1-V3-6wj" secondAttribute="centerX" id="gyV-Wq-Bwy"/>
+                            <constraint firstAttribute="trailing" secondItem="y4L-ms-QSr" secondAttribute="trailing" constant="16" id="kQM-TV-0iY"/>
+                            <constraint firstItem="lzn-UT-dmc" firstAttribute="top" secondItem="id1-V3-6wj" secondAttribute="bottom" constant="3" id="swz-Zg-JDH"/>
+                            <constraint firstItem="id1-V3-6wj" firstAttribute="centerX" secondItem="y4L-ms-QSr" secondAttribute="centerX" id="tU2-s2-bXd"/>
+                            <constraint firstItem="id1-V3-6wj" firstAttribute="width" secondItem="y4L-ms-QSr" secondAttribute="width" id="zQN-B8-Kxg"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Dhx-yt-faz" firstAttribute="leading" secondItem="Fbb-k0-xxC" secondAttribute="leading" constant="8" id="2dO-6k-6i0"/>
+                    <constraint firstAttribute="bottom" secondItem="Dhx-yt-faz" secondAttribute="bottom" constant="3" id="KOS-ov-i47"/>
+                    <constraint firstItem="Dhx-yt-faz" firstAttribute="top" secondItem="Fbb-k0-xxC" secondAttribute="top" constant="3" id="ZUA-vX-0R9"/>
+                    <constraint firstAttribute="trailing" secondItem="Dhx-yt-faz" secondAttribute="trailing" constant="8" id="eEZ-Ga-A8b"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="labelEmail" destination="id1-V3-6wj" id="yXi-jU-v9D"/>
+                <outlet property="labelName" destination="y4L-ms-QSr" id="CZo-qY-hPU"/>
+                <outlet property="labelPhone" destination="lzn-UT-dmc" id="xHr-j2-yYN"/>
+                <outlet property="viewContainer" destination="Dhx-yt-faz" id="uVD-ol-wgx"/>
+            </connections>
+            <point key="canvasLocation" x="24.5" y="-43.5"/>
+        </tableViewCell>
+    </objects>
+</document>

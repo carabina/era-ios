@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RSOSDatePickerDialogVC">
+            <connections>
+                <outlet property="datePicker" destination="9hE-sQ-DvN" id="7F8-u0-kMD"/>
+                <outlet property="toolbar" destination="g1o-Xf-Uph" id="VcJ-OK-VJf"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xv0-dP-3Bs" userLabel="View - Main Container">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jwl-OV-jP5" userLabel="Button - Wrapper">
+                            <rect key="frame" x="-0.5" y="-0.5" width="375" height="667"/>
+                            <connections>
+                                <action selector="handleDoneButton:" destination="-1" eventType="touchUpInside" id="WdU-4D-vsJ"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jmw-ug-l8w">
+                            <rect key="frame" x="0.0" y="407" width="375" height="260"/>
+                            <subviews>
+                                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9hE-sQ-DvN">
+                                    <rect key="frame" x="0.0" y="44" width="375" height="216"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <date key="date" timeIntervalSinceReferenceDate="-31604399.725931048">
+                                        <!--2000-01-01 05:00:00 +0000-->
+                                    </date>
+                                </datePicker>
+                                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g1o-Xf-Uph">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <items>
+                                        <barButtonItem systemItem="cancel" id="8EM-5O-dq2">
+                                            <connections>
+                                                <action selector="handleCancelButton:" destination="-1" id="1Kw-Du-Yr1"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem style="plain" systemItem="flexibleSpace" id="VEx-b3-z2F"/>
+                                        <barButtonItem systemItem="done" id="p8p-8y-r0y">
+                                            <connections>
+                                                <action selector="handleDoneButton:" destination="-1" id="Fia-to-npv"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </items>
+                                    <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </toolbar>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="9hE-sQ-DvN" firstAttribute="top" secondItem="g1o-Xf-Uph" secondAttribute="bottom" id="8ZM-Ee-b0i"/>
+                                <constraint firstItem="g1o-Xf-Uph" firstAttribute="top" secondItem="Jmw-ug-l8w" secondAttribute="top" id="9SY-Lo-haB"/>
+                                <constraint firstAttribute="trailing" secondItem="9hE-sQ-DvN" secondAttribute="trailing" id="CwB-JU-1VA"/>
+                                <constraint firstItem="9hE-sQ-DvN" firstAttribute="leading" secondItem="Jmw-ug-l8w" secondAttribute="leading" id="FaU-fj-tjY"/>
+                                <constraint firstAttribute="trailing" secondItem="g1o-Xf-Uph" secondAttribute="trailing" id="bvz-ij-OId"/>
+                                <constraint firstAttribute="bottom" secondItem="9hE-sQ-DvN" secondAttribute="bottom" id="h1A-8J-eSy"/>
+                                <constraint firstItem="g1o-Xf-Uph" firstAttribute="leading" secondItem="Jmw-ug-l8w" secondAttribute="leading" id="mWe-AC-rwI"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="Jwl-OV-jP5" firstAttribute="centerY" secondItem="xv0-dP-3Bs" secondAttribute="centerY" id="0HF-QY-YfI"/>
+                        <constraint firstItem="Jwl-OV-jP5" firstAttribute="width" secondItem="xv0-dP-3Bs" secondAttribute="width" id="Afu-LX-ZeT"/>
+                        <constraint firstAttribute="bottom" secondItem="Jmw-ug-l8w" secondAttribute="bottom" id="ESc-qw-Yn9"/>
+                        <constraint firstItem="Jwl-OV-jP5" firstAttribute="height" secondItem="xv0-dP-3Bs" secondAttribute="height" id="G0G-6d-iJA"/>
+                        <constraint firstItem="Jwl-OV-jP5" firstAttribute="centerX" secondItem="xv0-dP-3Bs" secondAttribute="centerX" id="LFE-jW-IUt"/>
+                        <constraint firstAttribute="trailing" secondItem="Jmw-ug-l8w" secondAttribute="trailing" id="keA-Jl-8B1"/>
+                        <constraint firstItem="Jmw-ug-l8w" firstAttribute="leading" secondItem="xv0-dP-3Bs" secondAttribute="leading" id="uVL-9w-1tm"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="xv0-dP-3Bs" firstAttribute="bottom" secondItem="Q5M-cg-NOt" secondAttribute="bottom" id="2AH-wX-14i"/>
+                <constraint firstItem="xv0-dP-3Bs" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="8Y2-jw-VrS"/>
+                <constraint firstItem="xv0-dP-3Bs" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="BJv-U8-tOA"/>
+                <constraint firstItem="xv0-dP-3Bs" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="b8A-nL-SfY"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+        </view>
+    </objects>
+</document>

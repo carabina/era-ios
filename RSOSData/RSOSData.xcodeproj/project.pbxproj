@@ -1,0 +1,787 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8309C76920447D02007ACD23 /* RSOSDataDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = 8309C76720447D02007ACD23 /* RSOSDataDevice.h */; };
+		8309C76A20447D02007ACD23 /* RSOSDataDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 8309C76820447D02007ACD23 /* RSOSDataDevice.m */; };
+		83C3168A203F425800D5178E /* RSOSDataVideoFeed.h in Headers */ = {isa = PBXBuildFile; fileRef = 83C31688203F425800D5178E /* RSOSDataVideoFeed.h */; };
+		83C3168B203F425800D5178E /* RSOSDataVideoFeed.m in Sources */ = {isa = PBXBuildFile; fileRef = 83C31689203F425800D5178E /* RSOSDataVideoFeed.m */; };
+		83EF0661203E45A200A2BAB7 /* RSOSDataPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 836A050D203E3E3200039A2B /* RSOSDataPhoto.m */; };
+		9C6FF5B620324DE300CB3A72 /* RSOSLocalStorageManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C6FF5B420324DE200CB3A72 /* RSOSLocalStorageManager.h */; };
+		9C6FF5B720324DE300CB3A72 /* RSOSLocalStorageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C6FF5B520324DE200CB3A72 /* RSOSLocalStorageManager.m */; };
+		9C6FF5EE203256BA00CB3A72 /* RSOSAuthManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C6FF5E3203256B900CB3A72 /* RSOSAuthManager.m */; };
+		9C6FF5EF203256BA00CB3A72 /* RSOSAccessTokenDataModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C6FF5E5203256B900CB3A72 /* RSOSAccessTokenDataModel.h */; };
+		9C6FF5F0203256BA00CB3A72 /* RSOSAccessTokenDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C6FF5E6203256B900CB3A72 /* RSOSAccessTokenDataModel.m */; };
+		9C6FF5F1203256BA00CB3A72 /* RSOSResponseStatusDataModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C6FF5E7203256B900CB3A72 /* RSOSResponseStatusDataModel.h */; };
+		9C6FF5F2203256BA00CB3A72 /* RSOSResponseStatusDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C6FF5E8203256B900CB3A72 /* RSOSResponseStatusDataModel.m */; };
+		9C6FF5F3203256BA00CB3A72 /* RSOSUserAccessTokenDataModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C6FF5E9203256B900CB3A72 /* RSOSUserAccessTokenDataModel.h */; };
+		9C6FF5F4203256BA00CB3A72 /* RSOSUserAccessTokenDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C6FF5EA203256B900CB3A72 /* RSOSUserAccessTokenDataModel.m */; };
+		9C6FF5F5203256BA00CB3A72 /* RSOSCredentialStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C6FF5EB203256B900CB3A72 /* RSOSCredentialStorage.h */; };
+		9C6FF5F6203256BA00CB3A72 /* RSOSAuthManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C6FF5EC203256BA00CB3A72 /* RSOSAuthManager.h */; };
+		9C6FF5F7203256BA00CB3A72 /* RSOSCredentialStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C6FF5ED203256BA00CB3A72 /* RSOSCredentialStorage.m */; };
+		9CB9CDC9202CE96E00EDD5EF /* RSOSData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CB9CDBF202CE96E00EDD5EF /* RSOSData.framework */; };
+		9CB9CDD0202CE96E00EDD5EF /* RSOSData.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CB9CDC2202CE96E00EDD5EF /* RSOSData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9CB9CE3C202CEB3500EDD5EF /* RSOSDataSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB9CE3A202CEB3500EDD5EF /* RSOSDataSerialization.m */; };
+		9CB9CE3F202D471100EDD5EF /* RSOSDataAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB9CDDA202CEAD700EDD5EF /* RSOSDataAddress.m */; };
+		9CB9CE40202D471100EDD5EF /* RSOSDataUserProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB9CDDD202CEAD700EDD5EF /* RSOSDataUserProfile.m */; };
+		9CB9CE41202D471100EDD5EF /* RSOSDataSavedLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB9CDE0202CEAD700EDD5EF /* RSOSDataSavedLocation.m */; };
+		9CB9CE45202D471100EDD5EF /* RSOSDataEmail.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB9CDEE202CEAD700EDD5EF /* RSOSDataEmail.m */; };
+		9CB9CE47202D471100EDD5EF /* RSOSDataEmergencyContact.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB9CDF3202CEAD700EDD5EF /* RSOSDataEmergencyContact.m */; };
+		9CB9CE53202D471100EDD5EF /* RSOSDataPhoneNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB9CE15202CEAD700EDD5EF /* RSOSDataPhoneNumber.m */; };
+		9CB9CE59202D471100EDD5EF /* RSOSDataObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB9CE25202CEAD700EDD5EF /* RSOSDataObject.m */; };
+		9CB9CE5A202D471100EDD5EF /* RSOSDataValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB9CE27202CEAD700EDD5EF /* RSOSDataValue.m */; };
+		9CB9CE5E202D474800EDD5EF /* RSOSUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB9CE2E202CEB0600EDD5EF /* RSOSUtils.m */; };
+		9CB9CE5F202D474800EDD5EF /* RSOSUtilsDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB9CE30202CEB0600EDD5EF /* RSOSUtilsDate.m */; };
+		9CB9CE60202D474800EDD5EF /* RSOSUtilsString.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB9CE32202CEB0600EDD5EF /* RSOSUtilsString.m */; };
+		9CDC10D12034AFBA005C550D /* RSOSDataLanguage.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CDC10CF2034AFBA005C550D /* RSOSDataLanguage.h */; };
+		9CDC10D22034AFBA005C550D /* RSOSDataLanguage.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CDC10D02034AFBA005C550D /* RSOSDataLanguage.m */; };
+		9CDC10D52034B035005C550D /* RSOSDataURL.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CDC10D32034B035005C550D /* RSOSDataURL.h */; };
+		9CDC10D62034B035005C550D /* RSOSDataURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CDC10D42034B035005C550D /* RSOSDataURL.m */; };
+		9CDC10D92034B088005C550D /* RSOSDataGeoLocation.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CDC10D72034B088005C550D /* RSOSDataGeoLocation.h */; };
+		9CDC10DA2034B088005C550D /* RSOSDataGeoLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CDC10D82034B088005C550D /* RSOSDataGeoLocation.m */; };
+		9CDC10DD2034C832005C550D /* RSOSDataAnimal.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CDC10DB2034C832005C550D /* RSOSDataAnimal.h */; };
+		9CDC10DE2034C832005C550D /* RSOSDataAnimal.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CDC10DC2034C832005C550D /* RSOSDataAnimal.m */; };
+		9CDC10E12034C846005C550D /* RSOSDataRealtimeMetric.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CDC10DF2034C846005C550D /* RSOSDataRealtimeMetric.h */; };
+		9CDC10E22034C846005C550D /* RSOSDataRealtimeMetric.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CDC10E02034C846005C550D /* RSOSDataRealtimeMetric.m */; };
+		9CDC10E52034C8BC005C550D /* RSOSDataVideoStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CDC10E32034C8BC005C550D /* RSOSDataVideoStream.h */; };
+		9CDC10E62034C8BC005C550D /* RSOSDataVideoStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CDC10E42034C8BC005C550D /* RSOSDataVideoStream.m */; };
+		9CDC10E92034C8DF005C550D /* RSOSDataUniqueDeviceID.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CDC10E72034C8DF005C550D /* RSOSDataUniqueDeviceID.h */; };
+		9CDC10EA2034C8DF005C550D /* RSOSDataUniqueDeviceID.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CDC10E82034C8DF005C550D /* RSOSDataUniqueDeviceID.m */; };
+		9CDC10EC2034DD60005C550D /* RSOSDataAddressTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CDC10EB2034DD60005C550D /* RSOSDataAddressTests.m */; };
+		9CDC10EE2034E6B7005C550D /* RSOSDataEmailTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CDC10ED2034E6B7005C550D /* RSOSDataEmailTests.m */; };
+		9CDC10F02034EA6D005C550D /* RSOSDataEmergencyContactTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CDC10EF2034EA6D005C550D /* RSOSDataEmergencyContactTests.m */; };
+		9CDC10F22034EA8F005C550D /* RSOSDataEmergencyPhoneNumberTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CDC10F12034EA8F005C550D /* RSOSDataEmergencyPhoneNumberTests.m */; };
+		9CDC1125203BCE9D005C550D /* RSOSDataClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CDC1123203BCE9D005C550D /* RSOSDataClient.h */; };
+		9CDC1126203BCE9D005C550D /* RSOSDataClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CDC1124203BCE9D005C550D /* RSOSDataClient.m */; };
+		E975E3CA3B4DF8EC519F2896 /* libPods-RSOSData.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FBBD883CC5912D7AFC1EEE7C /* libPods-RSOSData.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9CB9CDCA202CE96E00EDD5EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9CB9CDB6202CE96D00EDD5EF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9CB9CDBE202CE96D00EDD5EF;
+			remoteInfo = RSOSData;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1DFB34EC763A7B3EEC61CAFF /* Pods-RSOSData.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RSOSData.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-RSOSData/Pods-RSOSData.debug.xcconfig"; sourceTree = "<group>"; };
+		47DDD4E568BCF7998C1EB8AF /* Pods-RSOSData.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RSOSData.release.xcconfig"; path = "../Pods/Target Support Files/Pods-RSOSData/Pods-RSOSData.release.xcconfig"; sourceTree = "<group>"; };
+		8309C76720447D02007ACD23 /* RSOSDataDevice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSOSDataDevice.h; sourceTree = "<group>"; };
+		8309C76820447D02007ACD23 /* RSOSDataDevice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSOSDataDevice.m; sourceTree = "<group>"; };
+		836A050C203E3E3200039A2B /* RSOSDataPhoto.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSOSDataPhoto.h; sourceTree = "<group>"; };
+		836A050D203E3E3200039A2B /* RSOSDataPhoto.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSOSDataPhoto.m; sourceTree = "<group>"; };
+		83C31688203F425800D5178E /* RSOSDataVideoFeed.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSOSDataVideoFeed.h; sourceTree = "<group>"; };
+		83C31689203F425800D5178E /* RSOSDataVideoFeed.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSOSDataVideoFeed.m; sourceTree = "<group>"; };
+		9C6FF5B420324DE200CB3A72 /* RSOSLocalStorageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSOSLocalStorageManager.h; sourceTree = "<group>"; };
+		9C6FF5B520324DE200CB3A72 /* RSOSLocalStorageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSOSLocalStorageManager.m; sourceTree = "<group>"; };
+		9C6FF5E3203256B900CB3A72 /* RSOSAuthManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSOSAuthManager.m; sourceTree = "<group>"; };
+		9C6FF5E5203256B900CB3A72 /* RSOSAccessTokenDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSOSAccessTokenDataModel.h; sourceTree = "<group>"; };
+		9C6FF5E6203256B900CB3A72 /* RSOSAccessTokenDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSOSAccessTokenDataModel.m; sourceTree = "<group>"; };
+		9C6FF5E7203256B900CB3A72 /* RSOSResponseStatusDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSOSResponseStatusDataModel.h; sourceTree = "<group>"; };
+		9C6FF5E8203256B900CB3A72 /* RSOSResponseStatusDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSOSResponseStatusDataModel.m; sourceTree = "<group>"; };
+		9C6FF5E9203256B900CB3A72 /* RSOSUserAccessTokenDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSOSUserAccessTokenDataModel.h; sourceTree = "<group>"; };
+		9C6FF5EA203256B900CB3A72 /* RSOSUserAccessTokenDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSOSUserAccessTokenDataModel.m; sourceTree = "<group>"; };
+		9C6FF5EB203256B900CB3A72 /* RSOSCredentialStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSOSCredentialStorage.h; sourceTree = "<group>"; };
+		9C6FF5EC203256BA00CB3A72 /* RSOSAuthManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSOSAuthManager.h; sourceTree = "<group>"; };
+		9C6FF5ED203256BA00CB3A72 /* RSOSCredentialStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSOSCredentialStorage.m; sourceTree = "<group>"; };
+		9CB9CDBF202CE96E00EDD5EF /* RSOSData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RSOSData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CB9CDC2202CE96E00EDD5EF /* RSOSData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSOSData.h; sourceTree = "<group>"; };
+		9CB9CDC3202CE96E00EDD5EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9CB9CDC8202CE96E00EDD5EF /* RSOSDataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RSOSDataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CB9CDCF202CE96E00EDD5EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9CB9CDD9202CEAD700EDD5EF /* RSOSDataAddress.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSOSDataAddress.h; sourceTree = "<group>"; };
+		9CB9CDDA202CEAD700EDD5EF /* RSOSDataAddress.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSOSDataAddress.m; sourceTree = "<group>"; };
+		9CB9CDDC202CEAD700EDD5EF /* RSOSDataUserProfile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSOSDataUserProfile.h; sourceTree = "<group>"; };
+		9CB9CDDD202CEAD700EDD5EF /* RSOSDataUserProfile.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSOSDataUserProfile.m; sourceTree = "<group>"; };
+		9CB9CDDF202CEAD700EDD5EF /* RSOSDataSavedLocation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSOSDataSavedLocation.h; sourceTree = "<group>"; };
+		9CB9CDE0202CEAD700EDD5EF /* RSOSDataSavedLocation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSOSDataSavedLocation.m; sourceTree = "<group>"; };
+		9CB9CDED202CEAD700EDD5EF /* RSOSDataEmail.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSOSDataEmail.h; sourceTree = "<group>"; };
+		9CB9CDEE202CEAD700EDD5EF /* RSOSDataEmail.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSOSDataEmail.m; sourceTree = "<group>"; };
+		9CB9CDF2202CEAD700EDD5EF /* RSOSDataEmergencyContact.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSOSDataEmergencyContact.h; sourceTree = "<group>"; };
+		9CB9CDF3202CEAD700EDD5EF /* RSOSDataEmergencyContact.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSOSDataEmergencyContact.m; sourceTree = "<group>"; };
+		9CB9CE14202CEAD700EDD5EF /* RSOSDataPhoneNumber.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSOSDataPhoneNumber.h; sourceTree = "<group>"; };
+		9CB9CE15202CEAD700EDD5EF /* RSOSDataPhoneNumber.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSOSDataPhoneNumber.m; sourceTree = "<group>"; };
+		9CB9CE24202CEAD700EDD5EF /* RSOSDataObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSOSDataObject.h; sourceTree = "<group>"; };
+		9CB9CE25202CEAD700EDD5EF /* RSOSDataObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSOSDataObject.m; sourceTree = "<group>"; };
+		9CB9CE26202CEAD700EDD5EF /* RSOSDataValue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSOSDataValue.h; sourceTree = "<group>"; };
+		9CB9CE27202CEAD700EDD5EF /* RSOSDataValue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSOSDataValue.m; sourceTree = "<group>"; };
+		9CB9CE2D202CEB0600EDD5EF /* RSOSUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSOSUtils.h; sourceTree = "<group>"; };
+		9CB9CE2E202CEB0600EDD5EF /* RSOSUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSOSUtils.m; sourceTree = "<group>"; };
+		9CB9CE2F202CEB0600EDD5EF /* RSOSUtilsDate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSOSUtilsDate.h; sourceTree = "<group>"; };
+		9CB9CE30202CEB0600EDD5EF /* RSOSUtilsDate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSOSUtilsDate.m; sourceTree = "<group>"; };
+		9CB9CE31202CEB0600EDD5EF /* RSOSUtilsString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSOSUtilsString.h; sourceTree = "<group>"; };
+		9CB9CE32202CEB0600EDD5EF /* RSOSUtilsString.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSOSUtilsString.m; sourceTree = "<group>"; };
+		9CB9CE3A202CEB3500EDD5EF /* RSOSDataSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSOSDataSerialization.m; sourceTree = "<group>"; };
+		9CB9CE3B202CEB3500EDD5EF /* RSOSDataSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSOSDataSerialization.h; sourceTree = "<group>"; };
+		9CDC10CF2034AFBA005C550D /* RSOSDataLanguage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSOSDataLanguage.h; sourceTree = "<group>"; };
+		9CDC10D02034AFBA005C550D /* RSOSDataLanguage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSOSDataLanguage.m; sourceTree = "<group>"; };
+		9CDC10D32034B035005C550D /* RSOSDataURL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSOSDataURL.h; sourceTree = "<group>"; };
+		9CDC10D42034B035005C550D /* RSOSDataURL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSOSDataURL.m; sourceTree = "<group>"; };
+		9CDC10D72034B088005C550D /* RSOSDataGeoLocation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSOSDataGeoLocation.h; sourceTree = "<group>"; };
+		9CDC10D82034B088005C550D /* RSOSDataGeoLocation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSOSDataGeoLocation.m; sourceTree = "<group>"; };
+		9CDC10DB2034C832005C550D /* RSOSDataAnimal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSOSDataAnimal.h; sourceTree = "<group>"; };
+		9CDC10DC2034C832005C550D /* RSOSDataAnimal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSOSDataAnimal.m; sourceTree = "<group>"; };
+		9CDC10DF2034C846005C550D /* RSOSDataRealtimeMetric.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSOSDataRealtimeMetric.h; sourceTree = "<group>"; };
+		9CDC10E02034C846005C550D /* RSOSDataRealtimeMetric.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSOSDataRealtimeMetric.m; sourceTree = "<group>"; };
+		9CDC10E32034C8BC005C550D /* RSOSDataVideoStream.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSOSDataVideoStream.h; sourceTree = "<group>"; };
+		9CDC10E42034C8BC005C550D /* RSOSDataVideoStream.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSOSDataVideoStream.m; sourceTree = "<group>"; };
+		9CDC10E72034C8DF005C550D /* RSOSDataUniqueDeviceID.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSOSDataUniqueDeviceID.h; sourceTree = "<group>"; };
+		9CDC10E82034C8DF005C550D /* RSOSDataUniqueDeviceID.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSOSDataUniqueDeviceID.m; sourceTree = "<group>"; };
+		9CDC10EB2034DD60005C550D /* RSOSDataAddressTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSOSDataAddressTests.m; sourceTree = "<group>"; };
+		9CDC10ED2034E6B7005C550D /* RSOSDataEmailTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSOSDataEmailTests.m; sourceTree = "<group>"; };
+		9CDC10EF2034EA6D005C550D /* RSOSDataEmergencyContactTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSOSDataEmergencyContactTests.m; sourceTree = "<group>"; };
+		9CDC10F12034EA8F005C550D /* RSOSDataEmergencyPhoneNumberTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSOSDataEmergencyPhoneNumberTests.m; sourceTree = "<group>"; };
+		9CDC1123203BCE9D005C550D /* RSOSDataClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSOSDataClient.h; sourceTree = "<group>"; };
+		9CDC1124203BCE9D005C550D /* RSOSDataClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSOSDataClient.m; sourceTree = "<group>"; };
+		FBBD883CC5912D7AFC1EEE7C /* libPods-RSOSData.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RSOSData.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9CB9CDBB202CE96D00EDD5EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E975E3CA3B4DF8EC519F2896 /* libPods-RSOSData.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CB9CDC5202CE96E00EDD5EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CB9CDC9202CE96E00EDD5EF /* RSOSData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		41937C39EB509BE4664CC467 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FBBD883CC5912D7AFC1EEE7C /* libPods-RSOSData.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8309C76620447C94007ACD23 /* Devices */ = {
+			isa = PBXGroup;
+			children = (
+				8309C76720447D02007ACD23 /* RSOSDataDevice.h */,
+				8309C76820447D02007ACD23 /* RSOSDataDevice.m */,
+			);
+			path = Devices;
+			sourceTree = "<group>";
+		};
+		99BDFA49861D09DD6F016437 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1DFB34EC763A7B3EEC61CAFF /* Pods-RSOSData.debug.xcconfig */,
+				47DDD4E568BCF7998C1EB8AF /* Pods-RSOSData.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9C6FF5E2203256A000CB3A72 /* Authorization */ = {
+			isa = PBXGroup;
+			children = (
+				9C6FF5E4203256B900CB3A72 /* DataModel */,
+				9C6FF5EC203256BA00CB3A72 /* RSOSAuthManager.h */,
+				9C6FF5E3203256B900CB3A72 /* RSOSAuthManager.m */,
+				9C6FF5EB203256B900CB3A72 /* RSOSCredentialStorage.h */,
+				9C6FF5ED203256BA00CB3A72 /* RSOSCredentialStorage.m */,
+			);
+			path = Authorization;
+			sourceTree = "<group>";
+		};
+		9C6FF5E4203256B900CB3A72 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				9C6FF5E5203256B900CB3A72 /* RSOSAccessTokenDataModel.h */,
+				9C6FF5E6203256B900CB3A72 /* RSOSAccessTokenDataModel.m */,
+				9C6FF5E7203256B900CB3A72 /* RSOSResponseStatusDataModel.h */,
+				9C6FF5E8203256B900CB3A72 /* RSOSResponseStatusDataModel.m */,
+				9C6FF5E9203256B900CB3A72 /* RSOSUserAccessTokenDataModel.h */,
+				9C6FF5EA203256B900CB3A72 /* RSOSUserAccessTokenDataModel.m */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		9CB9CDB5202CE96D00EDD5EF = {
+			isa = PBXGroup;
+			children = (
+				9CB9CDC1202CE96E00EDD5EF /* RSOSData */,
+				9CB9CDCC202CE96E00EDD5EF /* RSOSDataTests */,
+				9CB9CDC0202CE96E00EDD5EF /* Products */,
+				99BDFA49861D09DD6F016437 /* Pods */,
+				41937C39EB509BE4664CC467 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9CB9CDC0202CE96E00EDD5EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9CB9CDBF202CE96E00EDD5EF /* RSOSData.framework */,
+				9CB9CDC8202CE96E00EDD5EF /* RSOSDataTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9CB9CDC1202CE96E00EDD5EF /* RSOSData */ = {
+			isa = PBXGroup;
+			children = (
+				9CB9CDC2202CE96E00EDD5EF /* RSOSData.h */,
+				9CDC1127203BDD2A005C550D /* DataClient */,
+				9CB9CE28202CEAD700EDD5EF /* Serialization */,
+				9C6FF5E2203256A000CB3A72 /* Authorization */,
+				9CB9CE39202CEB0600EDD5EF /* Utils */,
+				9CB9CDC3202CE96E00EDD5EF /* Info.plist */,
+			);
+			path = RSOSData;
+			sourceTree = "<group>";
+		};
+		9CB9CDCC202CE96E00EDD5EF /* RSOSDataTests */ = {
+			isa = PBXGroup;
+			children = (
+				9CDC10EB2034DD60005C550D /* RSOSDataAddressTests.m */,
+				9CDC10ED2034E6B7005C550D /* RSOSDataEmailTests.m */,
+				9CDC10EF2034EA6D005C550D /* RSOSDataEmergencyContactTests.m */,
+				9CDC10F12034EA8F005C550D /* RSOSDataEmergencyPhoneNumberTests.m */,
+				9CB9CDCF202CE96E00EDD5EF /* Info.plist */,
+			);
+			path = RSOSDataTests;
+			sourceTree = "<group>";
+		};
+		9CB9CDDB202CEAD700EDD5EF /* Values */ = {
+			isa = PBXGroup;
+			children = (
+				9CB9CDD9202CEAD700EDD5EF /* RSOSDataAddress.h */,
+				9CB9CDDA202CEAD700EDD5EF /* RSOSDataAddress.m */,
+				9CDC10DB2034C832005C550D /* RSOSDataAnimal.h */,
+				9CDC10DC2034C832005C550D /* RSOSDataAnimal.m */,
+				9CB9CDED202CEAD700EDD5EF /* RSOSDataEmail.h */,
+				9CB9CDEE202CEAD700EDD5EF /* RSOSDataEmail.m */,
+				9CB9CDF2202CEAD700EDD5EF /* RSOSDataEmergencyContact.h */,
+				9CB9CDF3202CEAD700EDD5EF /* RSOSDataEmergencyContact.m */,
+				9CDC10D72034B088005C550D /* RSOSDataGeoLocation.h */,
+				9CDC10D82034B088005C550D /* RSOSDataGeoLocation.m */,
+				9CDC10CF2034AFBA005C550D /* RSOSDataLanguage.h */,
+				9CDC10D02034AFBA005C550D /* RSOSDataLanguage.m */,
+				9CB9CE14202CEAD700EDD5EF /* RSOSDataPhoneNumber.h */,
+				9CB9CE15202CEAD700EDD5EF /* RSOSDataPhoneNumber.m */,
+				9CDC10DF2034C846005C550D /* RSOSDataRealtimeMetric.h */,
+				9CDC10E02034C846005C550D /* RSOSDataRealtimeMetric.m */,
+				9CDC10E72034C8DF005C550D /* RSOSDataUniqueDeviceID.h */,
+				9CDC10E82034C8DF005C550D /* RSOSDataUniqueDeviceID.m */,
+				9CDC10D32034B035005C550D /* RSOSDataURL.h */,
+				9CDC10D42034B035005C550D /* RSOSDataURL.m */,
+				9CDC10E32034C8BC005C550D /* RSOSDataVideoStream.h */,
+				9CDC10E42034C8BC005C550D /* RSOSDataVideoStream.m */,
+				836A050C203E3E3200039A2B /* RSOSDataPhoto.h */,
+				836A050D203E3E3200039A2B /* RSOSDataPhoto.m */,
+				83C31688203F425800D5178E /* RSOSDataVideoFeed.h */,
+				83C31689203F425800D5178E /* RSOSDataVideoFeed.m */,
+			);
+			path = Values;
+			sourceTree = "<group>";
+		};
+		9CB9CDDE202CEAD700EDD5EF /* UserProfile */ = {
+			isa = PBXGroup;
+			children = (
+				9CB9CDDC202CEAD700EDD5EF /* RSOSDataUserProfile.h */,
+				9CB9CDDD202CEAD700EDD5EF /* RSOSDataUserProfile.m */,
+			);
+			path = UserProfile;
+			sourceTree = "<group>";
+		};
+		9CB9CDE1202CEAD700EDD5EF /* SavedLocations */ = {
+			isa = PBXGroup;
+			children = (
+				9CB9CDDF202CEAD700EDD5EF /* RSOSDataSavedLocation.h */,
+				9CB9CDE0202CEAD700EDD5EF /* RSOSDataSavedLocation.m */,
+			);
+			path = SavedLocations;
+			sourceTree = "<group>";
+		};
+		9CB9CE28202CEAD700EDD5EF /* Serialization */ = {
+			isa = PBXGroup;
+			children = (
+				9CB9CDDB202CEAD700EDD5EF /* Values */,
+				9CB9CDDE202CEAD700EDD5EF /* UserProfile */,
+				9CB9CDE1202CEAD700EDD5EF /* SavedLocations */,
+				8309C76620447C94007ACD23 /* Devices */,
+				9CB9CE24202CEAD700EDD5EF /* RSOSDataObject.h */,
+				9CB9CE25202CEAD700EDD5EF /* RSOSDataObject.m */,
+				9CB9CE26202CEAD700EDD5EF /* RSOSDataValue.h */,
+				9CB9CE27202CEAD700EDD5EF /* RSOSDataValue.m */,
+				9CB9CE3B202CEB3500EDD5EF /* RSOSDataSerialization.h */,
+				9CB9CE3A202CEB3500EDD5EF /* RSOSDataSerialization.m */,
+			);
+			path = Serialization;
+			sourceTree = "<group>";
+		};
+		9CB9CE39202CEB0600EDD5EF /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				9CB9CE2D202CEB0600EDD5EF /* RSOSUtils.h */,
+				9CB9CE2E202CEB0600EDD5EF /* RSOSUtils.m */,
+				9CB9CE2F202CEB0600EDD5EF /* RSOSUtilsDate.h */,
+				9CB9CE30202CEB0600EDD5EF /* RSOSUtilsDate.m */,
+				9CB9CE31202CEB0600EDD5EF /* RSOSUtilsString.h */,
+				9CB9CE32202CEB0600EDD5EF /* RSOSUtilsString.m */,
+				9C6FF5B420324DE200CB3A72 /* RSOSLocalStorageManager.h */,
+				9C6FF5B520324DE200CB3A72 /* RSOSLocalStorageManager.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		9CDC1127203BDD2A005C550D /* DataClient */ = {
+			isa = PBXGroup;
+			children = (
+				9CDC1123203BCE9D005C550D /* RSOSDataClient.h */,
+				9CDC1124203BCE9D005C550D /* RSOSDataClient.m */,
+			);
+			path = DataClient;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		9CB9CDBC202CE96D00EDD5EF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C6FF5F3203256BA00CB3A72 /* RSOSUserAccessTokenDataModel.h in Headers */,
+				9C6FF5F1203256BA00CB3A72 /* RSOSResponseStatusDataModel.h in Headers */,
+				9CDC10D92034B088005C550D /* RSOSDataGeoLocation.h in Headers */,
+				9C6FF5EF203256BA00CB3A72 /* RSOSAccessTokenDataModel.h in Headers */,
+				9CDC1125203BCE9D005C550D /* RSOSDataClient.h in Headers */,
+				9CB9CDD0202CE96E00EDD5EF /* RSOSData.h in Headers */,
+				83C3168A203F425800D5178E /* RSOSDataVideoFeed.h in Headers */,
+				9C6FF5F5203256BA00CB3A72 /* RSOSCredentialStorage.h in Headers */,
+				8309C76920447D02007ACD23 /* RSOSDataDevice.h in Headers */,
+				9C6FF5F6203256BA00CB3A72 /* RSOSAuthManager.h in Headers */,
+				9CDC10E92034C8DF005C550D /* RSOSDataUniqueDeviceID.h in Headers */,
+				9C6FF5B620324DE300CB3A72 /* RSOSLocalStorageManager.h in Headers */,
+				9CDC10DD2034C832005C550D /* RSOSDataAnimal.h in Headers */,
+				9CDC10D52034B035005C550D /* RSOSDataURL.h in Headers */,
+				9CDC10E12034C846005C550D /* RSOSDataRealtimeMetric.h in Headers */,
+				9CDC10D12034AFBA005C550D /* RSOSDataLanguage.h in Headers */,
+				9CDC10E52034C8BC005C550D /* RSOSDataVideoStream.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		9CB9CDBE202CE96D00EDD5EF /* RSOSData */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9CB9CDD3202CE96E00EDD5EF /* Build configuration list for PBXNativeTarget "RSOSData" */;
+			buildPhases = (
+				78C97F292628ECA66844BAD0 /* [CP] Check Pods Manifest.lock */,
+				9CB9CDBA202CE96D00EDD5EF /* Sources */,
+				9CB9CDBB202CE96D00EDD5EF /* Frameworks */,
+				9CB9CDBC202CE96D00EDD5EF /* Headers */,
+				9CB9CDBD202CE96D00EDD5EF /* Resources */,
+				D29D23BDBA00B9D53F53DFE0 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RSOSData;
+			productName = RSOSData;
+			productReference = 9CB9CDBF202CE96E00EDD5EF /* RSOSData.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9CB9CDC7202CE96E00EDD5EF /* RSOSDataTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9CB9CDD6202CE96E00EDD5EF /* Build configuration list for PBXNativeTarget "RSOSDataTests" */;
+			buildPhases = (
+				9CB9CDC4202CE96E00EDD5EF /* Sources */,
+				9CB9CDC5202CE96E00EDD5EF /* Frameworks */,
+				9CB9CDC6202CE96E00EDD5EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9CB9CDCB202CE96E00EDD5EF /* PBXTargetDependency */,
+			);
+			name = RSOSDataTests;
+			productName = RSOSDataTests;
+			productReference = 9CB9CDC8202CE96E00EDD5EF /* RSOSDataTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9CB9CDB6202CE96D00EDD5EF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = RapidSOS;
+				TargetAttributes = {
+					9CB9CDBE202CE96D00EDD5EF = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					9CB9CDC7202CE96E00EDD5EF = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 9CB9CDB9202CE96D00EDD5EF /* Build configuration list for PBXProject "RSOSData" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9CB9CDB5202CE96D00EDD5EF;
+			productRefGroup = 9CB9CDC0202CE96E00EDD5EF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9CB9CDBE202CE96D00EDD5EF /* RSOSData */,
+				9CB9CDC7202CE96E00EDD5EF /* RSOSDataTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9CB9CDBD202CE96D00EDD5EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CB9CDC6202CE96E00EDD5EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		78C97F292628ECA66844BAD0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RSOSData-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D29D23BDBA00B9D53F53DFE0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-RSOSData/Pods-RSOSData-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9CB9CDBA202CE96D00EDD5EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83EF0661203E45A200A2BAB7 /* RSOSDataPhoto.m in Sources */,
+				9CDC10E62034C8BC005C550D /* RSOSDataVideoStream.m in Sources */,
+				9CB9CE59202D471100EDD5EF /* RSOSDataObject.m in Sources */,
+				9CB9CE47202D471100EDD5EF /* RSOSDataEmergencyContact.m in Sources */,
+				9C6FF5F2203256BA00CB3A72 /* RSOSResponseStatusDataModel.m in Sources */,
+				9CB9CE53202D471100EDD5EF /* RSOSDataPhoneNumber.m in Sources */,
+				8309C76A20447D02007ACD23 /* RSOSDataDevice.m in Sources */,
+				9CB9CE40202D471100EDD5EF /* RSOSDataUserProfile.m in Sources */,
+				9CDC10DE2034C832005C550D /* RSOSDataAnimal.m in Sources */,
+				9CB9CE3C202CEB3500EDD5EF /* RSOSDataSerialization.m in Sources */,
+				9CDC1126203BCE9D005C550D /* RSOSDataClient.m in Sources */,
+				9CB9CE5E202D474800EDD5EF /* RSOSUtils.m in Sources */,
+				9C6FF5B720324DE300CB3A72 /* RSOSLocalStorageManager.m in Sources */,
+				9C6FF5F7203256BA00CB3A72 /* RSOSCredentialStorage.m in Sources */,
+				9C6FF5EE203256BA00CB3A72 /* RSOSAuthManager.m in Sources */,
+				9C6FF5F4203256BA00CB3A72 /* RSOSUserAccessTokenDataModel.m in Sources */,
+				9CDC10DA2034B088005C550D /* RSOSDataGeoLocation.m in Sources */,
+				9CB9CE41202D471100EDD5EF /* RSOSDataSavedLocation.m in Sources */,
+				9CB9CE3F202D471100EDD5EF /* RSOSDataAddress.m in Sources */,
+				9CB9CE5A202D471100EDD5EF /* RSOSDataValue.m in Sources */,
+				9CDC10D62034B035005C550D /* RSOSDataURL.m in Sources */,
+				9CDC10D22034AFBA005C550D /* RSOSDataLanguage.m in Sources */,
+				9CDC10E22034C846005C550D /* RSOSDataRealtimeMetric.m in Sources */,
+				9CDC10EA2034C8DF005C550D /* RSOSDataUniqueDeviceID.m in Sources */,
+				83C3168B203F425800D5178E /* RSOSDataVideoFeed.m in Sources */,
+				9CB9CE45202D471100EDD5EF /* RSOSDataEmail.m in Sources */,
+				9CB9CE60202D474800EDD5EF /* RSOSUtilsString.m in Sources */,
+				9C6FF5F0203256BA00CB3A72 /* RSOSAccessTokenDataModel.m in Sources */,
+				9CB9CE5F202D474800EDD5EF /* RSOSUtilsDate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CB9CDC4202CE96E00EDD5EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CDC10F22034EA8F005C550D /* RSOSDataEmergencyPhoneNumberTests.m in Sources */,
+				9CDC10F02034EA6D005C550D /* RSOSDataEmergencyContactTests.m in Sources */,
+				9CDC10EC2034DD60005C550D /* RSOSDataAddressTests.m in Sources */,
+				9CDC10EE2034E6B7005C550D /* RSOSDataEmailTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9CB9CDCB202CE96E00EDD5EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9CB9CDBE202CE96D00EDD5EF /* RSOSData */;
+			targetProxy = 9CB9CDCA202CE96E00EDD5EF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		9CB9CDD1202CE96E00EDD5EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9CB9CDD2202CE96E00EDD5EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9CB9CDD4202CE96E00EDD5EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DFB34EC763A7B3EEC61CAFF /* Pods-RSOSData.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S7Q3Q87HZ6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = RSOSData/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rapidsos.RSOSData;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9CB9CDD5202CE96E00EDD5EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47DDD4E568BCF7998C1EB8AF /* Pods-RSOSData.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S7Q3Q87HZ6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = RSOSData/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rapidsos.RSOSData;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9CB9CDD7202CE96E00EDD5EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S7Q3Q87HZ6;
+				INFOPLIST_FILE = RSOSDataTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rapidsos.RSOSDataTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9CB9CDD8202CE96E00EDD5EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S7Q3Q87HZ6;
+				INFOPLIST_FILE = RSOSDataTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rapidsos.RSOSDataTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9CB9CDB9202CE96D00EDD5EF /* Build configuration list for PBXProject "RSOSData" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CB9CDD1202CE96E00EDD5EF /* Debug */,
+				9CB9CDD2202CE96E00EDD5EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9CB9CDD3202CE96E00EDD5EF /* Build configuration list for PBXNativeTarget "RSOSData" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CB9CDD4202CE96E00EDD5EF /* Debug */,
+				9CB9CDD5202CE96E00EDD5EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9CB9CDD6202CE96E00EDD5EF /* Build configuration list for PBXNativeTarget "RSOSDataTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CB9CDD7202CE96E00EDD5EF /* Debug */,
+				9CB9CDD8202CE96E00EDD5EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9CB9CDB6202CE96D00EDD5EF /* Project object */;
+}
